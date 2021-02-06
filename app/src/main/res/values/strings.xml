@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">PlayVideo</string>
+    <string name="duration">Duration</string>
+
+    <string name="name">Name</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="folder_name">Folder Name</string>
+    <string name="todo">TODO</string>
+    <string name="folder">Folder</string>
+    <string name="_11_30_25">11:30:25</string>
+</resources>

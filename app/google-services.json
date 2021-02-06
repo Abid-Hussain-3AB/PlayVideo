@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "231403816768",
+    "project_id": "playvideo-e58db",
+    "storage_bucket": "playvideo-e58db.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:231403816768:android:090bdb5a82ea597ce8dca5",
+        "android_client_info": {
+          "package_name": "com.example.playvideo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "231403816768-c1d9ci88hjd6qq6b7r7h73lhq24vmikt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyADgCmpqqrSObxF3AwvrkP47MKWekXaZw4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "231403816768-c1d9ci88hjd6qq6b7r7h73lhq24vmikt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
