@@ -3,7 +3,6 @@ package com.example.playvideo;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.ContentUris;
-import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.provider.MediaStore;
@@ -16,15 +15,9 @@ import com.google.android.exoplayer2.upstream.DataSource;
 import com.google.android.exoplayer2.upstream.DefaultDataSourceFactory;
 import com.google.android.exoplayer2.util.Util;
 
-import java.net.URI;
-import java.util.ArrayList;
-
-import static com.example.playvideo.MainActivity.videolist;
-import static com.example.playvideo.VideoFolderAdapter.videofolderlist;
-
-public class PlayActivity extends AppCompatActivity {
-  private   PlayerView playerView;
-   private SimpleExoPlayer player;
+public class MP3PlayActivity extends AppCompatActivity {
+    private PlayerView playerView;
+    private SimpleExoPlayer player;
     long videoId;
     long AudioId;
 
@@ -33,8 +26,7 @@ public class PlayActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_play);
         initializeView();
-        videoId=getIntent().getExtras().getLong("videoId");
-
+        AudioId=getIntent().getExtras().getLong("MP3");
 
     }
     private void initializeView()
@@ -45,9 +37,9 @@ public class PlayActivity extends AppCompatActivity {
     {
         player=new SimpleExoPlayer.Builder(this).build();
         playerView.setPlayer(player);
-        Uri videoUri = ContentUris.withAppendedId(MediaStore.Video.Media.EXTERNAL_CONTENT_URI,videoId);
-        MediaSource mediaSource =buildMediaSource(videoUri);
-        player.prepare(mediaSource);
+        Uri audioUri = ContentUris.withAppendedId(MediaStore.Audio.Media.EXTERNAL_CONTENT_URI,AudioId);
+        MediaSource mediaSou = buildMediaSource(audioUri);
+        player.prepare(mediaSou);
         player.setPlayWhenReady(true);
 
     }
