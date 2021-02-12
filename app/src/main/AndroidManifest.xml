@@ -3,6 +3,8 @@
     package="com.example.playvideo">
 
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="Manifest.permission.WRITE_SETTINGS"/>
 
     <application
         android:allowBackup="true"
@@ -16,8 +18,11 @@
         <activity android:name=".VideoFolderActivity" />
         <activity android:name=".VideoFolders" />
         <activity android:name=".PlayActivity" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize|screenLayout|smallestScreenSize|uiMode">
+
             <intent-filter>
+
                 <action android:name="android.intent.action.MAIN"/>
 
                 <category android:name="android.intent.category.LAUNCHER" />
