@@ -64,7 +64,7 @@ public class MainActivity extends AppCompatActivity {
     private void initializeView() {
         RecyclerView recyclerView;
         recyclerView = findViewById(R.id.RcView);
-        recyclerView.setLayoutManager(new GridLayoutManager(this, 2));
+        recyclerView.setLayoutManager(new GridLayoutManager(this, 1));
         videoAdapter = new VideoAdapter(this, videolist);
         recyclerView.setAdapter(videoAdapter);
 

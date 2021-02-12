@@ -26,7 +26,6 @@ public class PlayActivity extends AppCompatActivity {
   private   PlayerView playerView;
    private SimpleExoPlayer player;
     long videoId;
-    long AudioId;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
