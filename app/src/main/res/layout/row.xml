@@ -49,5 +49,11 @@
         android:text="@string/_11_30_25"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
 
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/stat_notify_call_mute" />
+
 
 </LinearLayout>
