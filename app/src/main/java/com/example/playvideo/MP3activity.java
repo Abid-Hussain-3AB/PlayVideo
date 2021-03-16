@@ -24,7 +24,7 @@ public class MP3activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_m_p3activity);
         AudioRc=findViewById(R.id.AudioRc);
-        AudioRc.setLayoutManager(new GridLayoutManager(this,2));
+        AudioRc.setLayoutManager(new GridLayoutManager(this,1));
         audioAdapter=new AudioAdapter(this,Mp3List);
         AudioRc.setAdapter(audioAdapter);
         loadVideo();
@@ -64,7 +64,7 @@ public class MP3activity extends AppCompatActivity {
                         runOnUiThread(new Runnable() {
                             @Override
                             public void run() {
-                                audioAdapter.notifyItemInserted(Mp3List.size() - 1);
+                                audioAdapter.notifyItemInserted(Mp3List.size());
                             }
                         });
                     }
