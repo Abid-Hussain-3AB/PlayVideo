@@ -10,4 +10,8 @@
     <string name="folder">Folder</string>
     <string name="_11_30_25">11:30:25</string>
     <string name="todo">TODO</string>
+    <string name="playback_player_quick_settings" />
+    <string name="playback_screen_lock_portrait" />
+    <string name="playback_screen_lock_landscape" />
+    <string name="playback_screen_auto" />
 </resources>
